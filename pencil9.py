@@ -17,7 +17,7 @@ options.add_argument("--no-sandbox")
 options.add_argument("enable-automation")
 options.add_argument("--disable-infobars")
 options.add_argument("--disable-dev-shm-usage")
-PATH_GD = '⁨usr/bin/chromedriver'
+PATH_GD = '⁨cd /usr/bin/chromedriver'
 
 driver = webdriver.Chrome(PATH_GD, options=options)
 
