@@ -6,6 +6,7 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import os
+from webdriver_manager.chrome import ChromeDriverManager
 
 # In[1]
 
@@ -17,9 +18,8 @@ options.add_argument("--no-sandbox")
 options.add_argument("enable-automation")
 options.add_argument("--disable-infobars")
 options.add_argument("--disable-dev-shm-usage")
-PATH_GD = '⁨cd /usr/bin/chromedriver'
 
-driver = webdriver.Chrome(PATH_GD, options=options)
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 
 # In[23]:
